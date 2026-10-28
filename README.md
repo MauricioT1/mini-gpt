@@ -1,11 +1,7 @@
-# mini-gpt
+# mini-gpt | Python, PyTorch
 
-Um transformer decoder-only (estilo GPT) implementado **do zero em PyTorch**,
-treinado a nível de caractere no [TinyShakespeare](https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt) (~1MB).
-
-Atenção multi-head causal, blocos pre-norm, feed-forward, loop de treino e
-amostragem (temperatura e top-k) foram escritos manualmente, sem HuggingFace
-e sem `nn.TransformerEncoder`. O objetivo é aprender como um LLM funciona por dentro.
+Implementação de um transformer decoder-only do zero (atenção multi-head causal, pre-norm, loop de treino e amostragem), com 10.8M de parâmetros, treinado no TinyShakespeare. Análise de overfitting (loss de treino 0.79 vs. validação 1.67) e documentação das limitações do modelo.
+github.com/MauricioT1/mini-gpt
 
 ## Arquitetura
 
